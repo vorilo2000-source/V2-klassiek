@@ -1,0 +1,9 @@
+<!-- ======================= DOCUMENTVERSIE =======================
+Titel: product.svg
+Versie: 1.2
+Datum: 2026-09-28
+Doel: Lokale vectorafbeelding van de voorbeeldwebsite.
+============================================================== -->
+<!-- ======================= BEGIN TOPIC: ILLUSTRATIE_PRODUCT ======================= -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" role="img" aria-label="Abstracte voorbeeldillustratie"><rect width="600" height="440" rx="24" fill="#eddec5"/><rect x="112" y="75" width="375" height="285" rx="14" fill="#fff"/><rect x="145" y="115" width="200" height="20" rx="10" fill="#835132"/><rect x="145" y="164" width="300" height="12" rx="6" fill="#eddec5"/><rect x="145" y="194" width="255" height="12" rx="6" fill="#eddec5"/><rect x="145" y="252" width="60" height="65" rx="6" fill="#835132" opacity=".45"/><rect x="228" y="230" width="60" height="87" rx="6" fill="#835132" opacity=".7"/><rect x="310" y="208" width="60" height="109" rx="6" fill="#835132"/></svg>
+<!-- ======================= EINDE TOPIC: ILLUSTRATIE_PRODUCT ======================= -->

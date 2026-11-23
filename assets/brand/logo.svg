@@ -1,0 +1,9 @@
+<!-- ======================= DOCUMENTVERSIE =======================
+Titel: logo.svg
+Versie: 1.2
+Datum: 2026-09-28
+Doel: Lokale vectorafbeelding van de voorbeeldwebsite.
+============================================================== -->
+<!-- ======================= BEGIN TOPIC: LOGO ======================= -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Voorbeeldlogo"><rect width="64" height="64" rx="14" fill="#835132"/><path d="m13 15 19 35 19-35h-9L32 36 22 15z" fill="#fff"/><circle cx="48" cy="46" r="4" fill="#ffdeaa"/></svg>
+<!-- ======================= EINDE TOPIC: LOGO ======================= -->

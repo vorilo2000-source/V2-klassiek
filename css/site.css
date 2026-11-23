@@ -1,0 +1,123 @@
+/* ======================= DOCUMENTVERSIE =======================
+Titel: Stijlen van de website
+Versie: 1.2
+Datum: 2026-09-28
+Doel: Vormgeving voor topbar, navigatie, inhoud, footer en alle vijf lay-outs.
+============================================================= */
+/* ======================= BEGIN TOPIC: ALGEMEEN ======================= */
+/* === Gemeenschappelijke basis: dezelfde paginaopbouw voor alle vijf sites. === */
+:root { --ink:#183447; --sub:#57717d; --paper:#f7fafb; --panel:#ffffff; --brand:#087e91; --accent:#d8f0ed; --border:#d9e5e7; --heading:system-ui,sans-serif; --round:22px; }
+* { box-sizing:border-box; } /* Afmetingen omvatten randen en opvulling. */
+html { scroll-behavior:smooth; overflow-y:scroll; } /* Verticale scrollbar blijft zichtbaar. */
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+button,select,input,textarea { font:inherit; } /* Formulierelementen volgen de paginatypografie. */
+button { cursor:pointer; } /* Interactieve placeholders blijven herkenbaar. */
+a { color:inherit; } /* Navigatie en inhoud gebruiken hetzelfde kleurenpalet. */
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible { outline:3px solid var(--brand); outline-offset:3px; }
+.skip { position:absolute; top:-80px; left:8px; z-index:40; background:var(--panel); padding:8px 14px; } /* Toetsenbordlink. */
+.skip:focus { top:8px; }
+.wrap { width:min(1160px,calc(100% - 44px)); margin-inline:auto; } /* Centreert alle gedeelde onderdelen. */
+/* ======================= EINDE TOPIC: ALGEMEEN ======================= */
+/* ======================= BEGIN TOPIC: TOPBAR ======================= */
+.topbar { position:sticky; top:0; z-index:100; background:var(--ink); color:#fff; font-size:.83rem; } /* Houdt de topbar bovenaan. Topbar met taal en login. */
+.topbar .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:39px; }
+.topbar-controls { display:flex; align-items:center; gap:16px; }
+.topbar button { border:0; color:inherit; background:none; text-decoration:underline; padding:3px; }
+.topbar select { background:transparent; color:#fff; border:1px solid #ffffff77; border-radius:5px; padding:2px 6px; }
+.topbar option { color:#111; }
+/* ======================= EINDE TOPIC: TOPBAR ======================= */
+/* ======================= BEGIN TOPIC: NAVIGATIE ======================= */
+.site-header { position:sticky; top:39px; z-index:99; background:var(--panel); border-bottom:1px solid var(--border); } /* Houdt de navigatie onder de topbar. Navigatie bevat logo en menu. */
+.site-header .wrap { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; padding-block:17px; }
+.brand { display:inline-flex; align-items:center; gap:11px; font-weight:800; text-decoration:none; font-size:1.13rem; letter-spacing:-.025em; }
+.brand img { width:38px; height:38px; }
+.main-nav { display:flex; flex-wrap:wrap; gap:7px; }
+.main-nav a { padding:8px 13px; border-radius:9px; text-decoration:none; color:var(--sub); font-weight:600; }
+.main-nav a:hover,.main-nav a[aria-current="page"] { color:var(--brand); background:var(--accent); }
+/* ======================= EINDE TOPIC: NAVIGATIE ======================= */
+/* ======================= BEGIN TOPIC: HOOFDINHOUD ======================= */
+.page-grid { display:grid; grid-template-columns:minmax(0,1fr); gap:32px; padding-block:42px 78px; align-items:start; } /* Standaard: alleen main. */
+.page-main { min-width:0; } /* Voorkomt dat de horizontale rail het raster verbreedt. */
+.eyebrow { display:inline-block; color:var(--brand); font-weight:800; font-size:.78rem; text-transform:uppercase; letter-spacing:.16em; }
+h1,h2,h3 { font-family:var(--heading); line-height:1.16; letter-spacing:-.04em; }
+h1 { font-size:clamp(2.4rem,5.6vw,4.8rem); margin:13px 0 19px; max-width:13ch; }
+h2 { font-size:clamp(1.7rem,3vw,2.55rem); margin:0 0 17px; }
+h3 { font-size:1.15rem; margin:0 0 9px; }
+p { margin:0 0 16px; }
+.lead { font-size:clamp(1.04rem,1.6vw,1.22rem); color:var(--sub); max-width:54ch; }
+.hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(220px,.9fr); align-items:center; gap:36px; min-height:430px; }
+.hero-art { width:100%; border-radius:var(--round); box-shadow:0 22px 65px #10293620; background:var(--accent); }
+.cta { display:inline-block; margin-top:14px; background:var(--brand); color:white; padding:12px 20px; border-radius:11px; text-decoration:none; font-weight:700; }
+.cta:hover { filter:brightness(.88); }
+.section-block { padding-block:38px; border-top:1px solid var(--border); }
+.section-block:first-of-type { border-top:0; }
+.section-intro { color:var(--sub); max-width:68ch; }
+.split { display:grid; grid-template-columns:1fr 1fr; gap:23px; align-items:center; }
+.product-art { width:100%; border-radius:var(--round); background:var(--accent); }
+.mini-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.mini { background:var(--panel); border:1px solid var(--border); border-radius:var(--round); padding:22px; }
+.mini strong { color:var(--brand); display:block; font-size:1.7rem; line-height:1.3; }
+.horizontal-track { display:flex; gap:16px; overflow-x:scroll; overscroll-behavior-inline:contain; padding:6px 2px 21px; scrollbar-width:auto; scrollbar-color:var(--brand) var(--accent); } /* Scrollbar van links naar rechts. */
+.horizontal-track::-webkit-scrollbar { height:12px; }
+.horizontal-track::-webkit-scrollbar-thumb { background:var(--brand); border-radius:12px; }
+.horizontal-track::-webkit-scrollbar-track { background:var(--accent); border-radius:12px; }
+.track-card { flex:0 0 clamp(250px,37vw,385px); min-height:184px; padding:25px; border-radius:var(--round); background:var(--panel); border:1px solid var(--border); }
+.track-card p { color:var(--sub); }
+/* ======================= EINDE TOPIC: HOOFDINHOUD ======================= */
+/* ======================= BEGIN TOPIC: SIDEBAR ======================= */
+.sidebar { background:var(--panel); border:1px solid var(--border); border-radius:var(--round); padding:23px; position:sticky; top:18px; }
+.sidebar a { display:block; padding:8px 0; color:var(--brand); }
+/* ======================= EINDE TOPIC: SIDEBAR ======================= */
+/* ======================= BEGIN TOPIC: FORMULIER ======================= */
+.contact-panel { padding:26px; border:1px solid var(--border); border-radius:var(--round); background:var(--panel); max-width:700px; }
+.contact-panel label { display:block; font-weight:700; margin-top:15px; }
+.contact-panel input,.contact-panel textarea { width:100%; padding:11px; border-radius:7px; border:1px solid var(--border); margin-top:5px; background:var(--paper); color:var(--ink); }
+.contact-panel button { margin-top:16px; background:var(--brand); color:#fff; padding:10px 16px; border:0; border-radius:8px; }
+.contact-panel .note { font-size:.85rem; color:var(--sub); margin:12px 0 0; }
+/* ======================= EINDE TOPIC: FORMULIER ======================= */
+/* ======================= BEGIN TOPIC: FOOTER_EN_DIALOOG ======================= */
+.site-footer { background:var(--ink); color:#fff; padding:33px 0; } /* Footer met logo en verplichte invulvelden. */
+.site-footer .wrap { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px; }
+.site-footer .brand { color:#fff; }
+.footer-links { display:flex; flex-wrap:wrap; gap:13px; }
+.footer-links button { padding:2px; background:none; border:0; color:#fff; text-decoration:underline; }
+.powered { opacity:.75; font-size:.83rem; }
+dialog { border:1px solid var(--border); border-radius:15px; padding:25px; max-width:420px; color:var(--ink); background:var(--panel); }
+dialog::backdrop { background:#0c2039aa; }
+dialog button { background:var(--brand); color:#fff; border:0; border-radius:7px; padding:8px 14px; }
+/* ======================= EINDE TOPIC: FOOTER_EN_DIALOOG ======================= */
+/* ======================= BEGIN TOPIC: V1_VORMGEVING ======================= */
+/* === V1: eigentijdse typografie en luchtig kaartontwerp. === */
+body.v1 { --ink:#182c53; --sub:#54667f; --paper:#f3f7fd; --brand:#455cda; --accent:#e8eaff; --border:#dbe2f0; --round:24px; }
+body.v1 .hero { background:linear-gradient(115deg,#e9ecff,#f6fbfe 72%); margin:-12px -16px 0; padding:30px 25px; border-radius:30px; }
+/* ======================= EINDE TOPIC: V1_VORMGEVING ======================= */
+/* ======================= BEGIN TOPIC: V2_VORMGEVING ======================= */
+/* === V2: klassiek papier, rechte hoeken en schreefletters. === */
+body.v2 { --ink:#342e26; --sub:#695e51; --paper:#f5f0e6; --panel:#fffdf8; --brand:#835132; --accent:#ecdfc9; --border:#d9cbb9; --heading:Georgia,serif; --round:4px; }
+body.v2 .hero { border-top:3px double var(--brand); border-bottom:3px double var(--brand); }
+body.v2 .main-nav a { border-radius:0; }
+/* ======================= EINDE TOPIC: V2_VORMGEVING ======================= */
+/* ======================= BEGIN TOPIC: V3_VORMGEVING ======================= */
+/* === V3: zijbalk links en de hoofdinhoud rechts. === */
+body.v3 { --ink:#123f41; --sub:#577273; --paper:#eff7f4; --brand:#14796c; --accent:#d9efe7; --border:#cfe0dc; --round:18px; }
+body.v3 .page-grid { grid-template-columns:215px minmax(0,1fr); }
+body.v3 .sidebar { grid-column:1; grid-row:1; }
+body.v3 .page-main { grid-column:2; grid-row:1; }
+/* ======================= EINDE TOPIC: V3_VORMGEVING ======================= */
+/* ======================= BEGIN TOPIC: V4_VORMGEVING ======================= */
+/* === V4: hoofdinhoud links en zijbalk rechts. === */
+body.v4 { --ink:#423028; --sub:#746254; --paper:#faf5ed; --brand:#aa6235; --accent:#f6e5d1; --border:#e9daca; --round:16px; }
+body.v4 .page-grid { grid-template-columns:minmax(0,1fr) 215px; }
+body.v4 .page-main { grid-column:1; grid-row:1; }
+body.v4 .sidebar { grid-column:2; grid-row:1; }
+/* ======================= EINDE TOPIC: V4_VORMGEVING ======================= */
+/* ======================= BEGIN TOPIC: V5_VORMGEVING ======================= */
+/* === V5: één lange pagina, met verticale hoofdstukken. === */
+body.v5 { --ink:#153c37; --sub:#59736c; --paper:#f1f8f3; --brand:#13806d; --accent:#d7eee0; --border:#d1e2d7; --round:20px; }
+body.v5 .chapter { padding-block:80px; border-bottom:1px solid var(--border); scroll-margin-top:15px; min-height:620px; }
+body.v5 .chapter:first-child { padding-top:10px; }
+body.v5 .chapter:last-child { border-bottom:0; }
+/* ======================= EINDE TOPIC: V5_VORMGEVING ======================= */
+/* ======================= BEGIN TOPIC: MOBIEL ======================= */
+@media (max-width:760px) { .hero,.split,.mini-grid { grid-template-columns:1fr; } .hero { min-height:0; } .hero-art { max-height:310px; } body.v3 .page-grid,body.v4 .page-grid { display:flex; flex-direction:column; } .sidebar { position:static; width:100%; } .main-nav { width:100%; } .main-nav a { padding-inline:8px; } body.v5 .chapter { min-height:0; padding-block:60px; } }
+/* ======================= EINDE TOPIC: MOBIEL ======================= */

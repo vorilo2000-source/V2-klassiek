@@ -1,0 +1,9 @@
+<!-- ======================= DOCUMENTVERSIE =======================
+Titel: hero.svg
+Versie: 1.2
+Datum: 2026-09-28
+Doel: Lokale vectorafbeelding van de voorbeeldwebsite.
+============================================================== -->
+<!-- ======================= BEGIN TOPIC: ILLUSTRATIE_HERO ======================= -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" role="img" aria-label="Abstracte voorbeeldillustratie"><rect width="600" height="440" rx="24" fill="#eddec5"/><circle cx="300" cy="218" r="126" fill="#835132" opacity=".2"/><rect x="110" y="120" width="322" height="248" rx="18" fill="#fff"/><rect x="110" y="120" width="322" height="46" rx="18" fill="#835132"/><circle cx="139" cy="144" r="6" fill="#fff"/><circle cx="160" cy="144" r="6" fill="#fff"/><rect x="143" y="197" width="220" height="18" rx="9" fill="#835132" opacity=".85"/><rect x="143" y="238" width="170" height="12" rx="6" fill="#eddec5"/><rect x="143" y="266" width="200" height="12" rx="6" fill="#eddec5"/><rect x="143" y="306" width="103" height="29" rx="9" fill="#835132"/><circle cx="440" cy="302" r="61" fill="#835132" opacity=".7"/></svg>
+<!-- ======================= EINDE TOPIC: ILLUSTRATIE_HERO ======================= -->

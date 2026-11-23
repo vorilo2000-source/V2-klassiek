@@ -1,0 +1,47 @@
+<!-- ======================= DOCUMENTVERSIE =======================
+Titel: Over ons | Klassiek
+Versie: 1.2
+Datum: 2026-09-28
+Doel: Structuur en inhoud van about.html.
+============================================================== -->
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Voorbeeldwebsite Klassiek met een gedeelde paginabasis."><title>Over ons | Klassiek</title><link rel="icon" type="image/svg+xml" href="../assets/brand/logo.svg"><link rel="stylesheet" href="../css/site.css"><script defer src="../js/site.js"></script></head>
+<body class="v2"><a class="skip" href="#main">Ga naar inhoud</a><!-- Topbar: login en talen. -->
+<!-- ======================= BEGIN TOPIC: TOPBAR ======================= -->
+<div class="topbar"><div class="wrap"><span>Voorbeeldwebsite · Klassiek</span><div class="topbar-controls"><button type="button" data-info="login" data-i18n="login">Login</button><label for="language-select" data-i18n="language">Taal</label><select id="language-select" aria-label="Taal"><option value="nl">NL</option><option value="en">EN</option><option value="es">ES</option></select></div></div></div>
+<!-- ======================= EINDE TOPIC: TOPBAR ======================= -->
+
+<!-- Navigatie: één herkenbaar logo en vier pagina's of vier secties. -->
+<!-- ======================= BEGIN TOPIC: NAVIGATIE ======================= -->
+<header class="site-header"><div class="wrap"><a class="brand" href="../index.html"><img src="../assets/brand/logo.svg" alt=""><span>Klassiek</span></a><nav class="main-nav" aria-label="Hoofdnavigatie"><a href="../index.html" data-i18n="home">Home</a>
+          <a href="../pages/about.html" aria-current="page" data-i18n="about">Over ons</a>
+          <a href="../pages/product.html" data-i18n="product">Product</a>
+          <a href="../pages/contact.html" data-i18n="contact">Contact</a></nav></div></header>
+<!-- ======================= EINDE TOPIC: NAVIGATIE ======================= -->
+
+<!-- Inhoud: V3 en V4 krijgen een zijbalk; V5 heeft vier hoofdstukken. -->
+<!-- ======================= BEGIN TOPIC: PAGINA_LAYOUT ======================= -->
+<div class="wrap page-grid"><!-- ======================= BEGIN TOPIC: MAIN ======================= -->
+<main id="main" class="page-main"><!-- ======================= BEGIN TOPIC: HERO ======================= -->
+<div class="hero"><div><span class="eyebrow">Ons verhaal</span><h1>Een verhaal om op te bouwen.</h1><p class="lead">Beschrijf wie je bent, waar je voor staat en voor wie je werkt. De opbouw van deze voorbeeldpagina is klaar voor je eigen verhaal.</p></div><img class="hero-art" src="../assets/images/hero.svg" alt="Abstracte illustratie voor het verhaal"></div>
+<!-- ======================= EINDE TOPIC: HERO ======================= -->
+<!-- ======================= BEGIN TOPIC: INHOUD ======================= -->
+<section class="section-block"><h2>Ruimte voor mensen en mijlpalen.</h2><p class="section-intro">Missie, team en geschiedenis krijgen elk een eigen plek. Vul hieronder je concrete informatie in en verwijder de voorbeelden voordat je publiceert.</p><div class="mini-grid"><div class="mini"><strong>2024</strong><h3>Het begin</h3><p>Voorbeeld voor een eerste mijlpaal.</p></div><div class="mini"><strong>2025</strong><h3>De groei</h3><p>Voorbeeld voor een volgende stap.</p></div><div class="mini"><strong>Nu</strong><h3>De toekomst</h3><p>Voorbeeld voor de plannen van morgen.</p></div></div></section>
+<!-- ======================= EINDE TOPIC: INHOUD ======================= -->
+<!-- ======================= BEGIN TOPIC: KAARTEN ======================= -->
+<section class="section-block" aria-labelledby="rail-title"><span class="eyebrow" data-i18n="browse">Scroll horizontaal voor meer onderdelen</span><h2 id="rail-title">Ontdek de onderdelen</h2><div class="horizontal-track" tabindex="0" aria-label="Horizontaal schuifbare voorbeeldkaarten"><article class="track-card"><h3>01 · Tekst</h3><p>Gebruik deze kaart voor een inleiding, verhaal of opvallend citaat.</p></article><article class="track-card"><h3>02 · Beeld</h3><p>Voeg een eigen afbeelding met een korte beschrijving toe.</p></article><article class="track-card"><h3>03 · Grafiek</h3><p>Plaats hier een toegankelijke grafiek of een klein overzicht.</p></article><article class="track-card"><h3>04 · Resultaat</h3><p>Leg hier het resultaat of een voordeel in gewone taal uit.</p></article></div></section>
+<!-- ======================= EINDE TOPIC: KAARTEN ======================= -->
+</main>
+<!-- ======================= EINDE TOPIC: MAIN ======================= -->
+</div>
+<!-- ======================= EINDE TOPIC: PAGINA_LAYOUT ======================= -->
+
+<!-- Footer: logo, juridische invulvelden en Powered by Vorilo. -->
+<!-- ======================= BEGIN TOPIC: FOOTER ======================= -->
+<footer class="site-footer"><div class="wrap"><a class="brand" href="../index.html"><img src="../assets/brand/logo.svg" alt=""><span>Klassiek</span></a><div class="footer-links"><button type="button" data-info="disclaimer" data-i18n="disclaimer">Disclaimer</button><button type="button" data-info="privacy" data-i18n="privacy">Privacy</button><button type="button" data-info="terms" data-i18n="terms">Voorwaarden</button></div><span class="powered" data-i18n="powered">Powered by Vorilo</span></div></footer>
+<!-- ======================= EINDE TOPIC: FOOTER ======================= -->
+
+<!-- ======================= BEGIN TOPIC: DIALOOG ======================= -->
+<dialog id="demo-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title">Voorbeeld</h2><p>Dit is een placeholder.</p><form method="dialog"><button data-i18n="close">Sluiten</button></form></dialog>
+<!-- ======================= EINDE TOPIC: DIALOOG ======================= -->
+</body></html>
